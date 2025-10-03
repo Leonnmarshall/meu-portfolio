@@ -1,0 +1,64 @@
+.experience-container {
+  padding: 4rem 10%;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.experience-container h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  text-align: left;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 4px;
+  height: 100%;
+  background-color: #ccc;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  border: 4px solid #f8f9fa;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.timeline-content h4 {
+  color: #6c757d;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content span {
+    font-style: italic;
+}
+
+.timeline-content p{
+  color: #555
+}
