@@ -1,0 +1,78 @@
+.hero-container {
+  min-height: 80vh; /* Ocupa a maior parte da tela */
+  display: grid; /* Usaremos grid para as duas colunas */
+  grid-template-columns: 1fr 1fr; /* Duas colunas de tamanhos iguais */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  gap: 4rem; /* Espaçamento entre as colunas */
+  padding: 4rem 10%; /* Preenchimento nas laterais */
+  background-color: #f4f4f9;
+}
+
+.hero-content {
+  /* Não precisamos de max-width aqui, pois o grid já controla o tamanho */
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content h2 {
+  font-size: 1.8rem;
+  color: #007bff; /* Cor de destaque */
+  margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #218838;
+}
+
+/* Estilo para a imagem */
+.hero-image {
+  display: flex; /* Para centralizar a imagem dentro da coluna */
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  max-width: 100%; /* Garante que a imagem não transborde */
+  height: auto;
+  border-radius: 50%; /* Opcional: Para uma foto redonda */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Sombra para destacar */
+}
+
+/* Responsividade básica para telas menores */
+@media (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr; /* Em telas pequenas, volta para uma única coluna */
+    text-align: center; /* Centraliza o texto */
+    gap: 2rem; /* Reduz o espaçamento */
+    padding: 2rem 5%;
+  }
+
+  .hero-content {
+    text-align: center; 
+  } 
+
+}
+  .hero-content p {
+    color: #555
+  }
